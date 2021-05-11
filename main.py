@@ -11,9 +11,9 @@ import torch
 import torch.backends.cudnn as cudnn
 from numpy import random
 
-from Yolov4_scaled.models.experimental import attempt_load, attempt_download
-from Yolov4_scaled.utils.datasets import LoadStreams, LoadWebcam
-from Yolov4_scaled.utils.general import (
+from models.experimental import attempt_load, attempt_download
+from utils.datasets import LoadStreams, LoadWebcam
+from utils.general import (
     check_img_size, non_max_suppression, apply_classifier, scale_coords, xyxy2xywh, plot_one_box, strip_optimizer,
     torch_distributed_zero_first)
 from Yolov4_scaled.utils.torch_utils import select_device, load_classifier, time_synchronized, intersect_dicts

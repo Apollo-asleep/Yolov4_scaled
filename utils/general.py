@@ -22,7 +22,7 @@ from scipy.cluster.vq import kmeans
 from scipy.signal import butter, filtfilt
 from tqdm import tqdm
 
-from Yolov4_scaled.utils.torch_utils import init_seeds, is_parallel
+from utils.torch_utils import init_seeds, is_parallel
 
 # Set printoptions
 # linewidth: The number of characters per line for the purpose of inserting line breaks (default = 80).
