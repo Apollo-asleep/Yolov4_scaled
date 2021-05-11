@@ -1,0 +1,14 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: /content/ScaledYOLOv4/data/images/train.txt  # ... images
+val: /content/ScaledYOLOv4/data/images/val.txt  # ... images
+test: /content/ScaledYOLOv4/data/images/test.txt  # ... images
+
+#train: data/images/train.txt  # ... images
+#val: data/images/val.txt  # ... images
+#test: data/images/test.txt  # ... images
+
+# number of classes
+nc: 3
+
+# class names
+names: ['Key', 'Phone', 'Wallet']
