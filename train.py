@@ -18,14 +18,14 @@ from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
 import test  # import test.py to get mAP after each epoch
-from Yolov4_scaled.models.yolo import Model
-from Yolov4_scaled.utils.datasets import create_dataloader
-from Yolov4_scaled.utils.general import (
+from models.yolo import Model
+from utils.datasets import create_dataloader
+from utils.general import (
     check_img_size, torch_distributed_zero_first, labels_to_class_weights, plot_labels, check_anchors,
     labels_to_image_weights, compute_loss, plot_images, fitness, strip_optimizer, plot_results,
     get_latest_run, check_git_status, check_file, increment_dir, print_mutation, plot_evolution)
-from Yolov4_scaled.utils.google_utils import attempt_download
-from Yolov4_scaled.utils.torch_utils import init_seeds, ModelEMA, select_device, intersect_dicts
+from utils.google_utils import attempt_download
+from utils.torch_utils import init_seeds, ModelEMA, select_device, intersect_dicts
 
 
 def train(hyp, opt, device, tb_writer=None):
